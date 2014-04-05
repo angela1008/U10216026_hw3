@@ -29,7 +29,7 @@ public class BMI extends JFrame {
 		p1.add(oheight);
 		p1.setBorder(new TitledBorder("Enter name, age, weight, and height"));
 		
-		JPanel p2 = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+		JPanel p2 = new JPanel(new FlowLayout(FlowLayout.CENTER));
 		p2.add(computeBMI);
 		
 		JPanel p3 = new JPanel(new GridLayout(2, 2));
@@ -69,6 +69,7 @@ public class BMI extends JFrame {
 	public static void main(String[] args){
 		BMI frame = new BMI();
 		frame.pack();
+		frame.setSize(350, 235);
 		frame.setTitle("BMI");
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
